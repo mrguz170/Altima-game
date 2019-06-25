@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: caaa66b0ccf44f042af3bd781f7a7a69
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Nissan Brand
+  fontNames:
+  - Nissan Brand
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 08e5045027feeed44a7de97b7fdacfc1, type: 3}
+  - {fileID: 12800000, guid: a01de7546b1da9a4f9b204bd5f298b7a, type: 3}
+  - {fileID: 12800000, guid: 87f67d7825e5c9747a4d3e14361ab8ef, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

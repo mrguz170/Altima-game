@@ -79,12 +79,12 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	public Transform COM;		// Center of mass.
 
 	// Bools.
-	public bool canControl = true;																			// Enables / Disables controlling the vehicle.
+	public bool canControl = true;												// Enables / Disables controlling the vehicle.
 	public bool runEngineAtAwake{get{return RCCSettings.runEngineAtAwake;}}		// Engine running at Awake?
-	public bool engineRunning = false;																		// Engine running now?
-	public bool autoReverse{get{return RCCSettings.autoReverse;}}							// Enables / Disables auto reversing when player press brake button. Useful for if you are making parking style game.
-	public bool automaticGear{get{return RCCSettings.useAutomaticGear;}}				// Enables / Disables automatic gear shifting of the vehicle.
-	internal bool semiAutomaticGear = false;															// Enables / Disables automatic gear shifting of the vehicle.
+	public bool engineRunning = false;											// Engine running now?
+	public bool autoReverse{get{return RCCSettings.autoReverse;}}			// Enables / Disables auto reversing when player press brake button. Useful for if you are making parking style game.
+	public bool automaticGear{get{return RCCSettings.useAutomaticGear;}}	// Enables / Disables automatic gear shifting of the vehicle.
+	internal bool semiAutomaticGear = false;	// Enables / Disables automatic gear shifting of the vehicle.
 	internal bool canGoReverseNow = false;
 	 
 	// Configurations.
@@ -387,7 +387,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	public delegate void onRCCPlayerCollision(RCC_CarControllerV3 RCC, Collision collision);
 	public static event onRCCPlayerCollision OnRCCPlayerCollision;
 
-	void Awake (){
+	public void Awake (){
 
 		// Overriding Fixed TimeStep.
 		if(RCCSettings.overrideFixedTimeStep)
@@ -512,7 +512,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 	}
 
-	void OnEnable(){
+	public void OnEnable(){
 
 		StartCoroutine (RCCPlayerSpawned());
 
@@ -823,7 +823,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	}
 
 	// Default mesh vertices positions. Used for repairing the vehicle body.
-	void LoadOriginalMeshData(){
+	public void LoadOriginalMeshData(){
 
 		originalMeshData = new originalMeshVerts[deformableMeshFilters.Length];
 
@@ -1268,7 +1268,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		if(engineSoundIdle){
 
-			engineSoundIdle.volume = Mathf.Lerp(engineRunning ? 1f : 0f, 0f, engineRPM / maxEngineRPM);
+            engineSoundIdle.volume = 0; //Mathf.Lerp(engineRunning ? 1f : 0f, 0f, engineRPM / maxEngineRPM);
 			engineSoundIdle.pitch = pitchLevel;
 
 		}
@@ -1517,7 +1517,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			if(!reversingSound.isPlaying)
 				reversingSound.Play();
 			
-			reversingSound.volume = Mathf.Lerp(0f, 1f, speed / targetSpeedForGear[0]);
+			reversingSound.volume = Mathf.Lerp(0f, 0f, speed / targetSpeedForGear[0]);
 			reversingSound.pitch = reversingSound.volume;
 
 		}else{
@@ -1712,7 +1712,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		
 	}
 	
-	private void ResetCar (){
+	public void ResetCar (){
 		
 		if(speed < 5 && !rigid.isKinematic){
 
@@ -1915,5 +1915,12 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			KillEngine ();
 
 	}
+    // codigo gus
+    public void ChangeSpeed()
+    {
+        
+
+
+    }
 	
 } 

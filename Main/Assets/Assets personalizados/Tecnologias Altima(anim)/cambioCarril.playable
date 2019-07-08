@@ -670,7 +670,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 2.15
+        time: 1.4166666
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 1.7953548, z: 0}
         outSlope: {x: 0, y: 1.7953548, z: 0}
@@ -681,8 +681,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 3.3333333
         value: {x: 0, y: 54.7019, z: 0}
-        inSlope: {x: 0, y: 61.515205, z: 0}
-        outSlope: {x: 0, y: 61.515205, z: 0}
+        inSlope: {x: 0, y: 40.533268, z: 0}
+        outSlope: {x: 0, y: 40.533268, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -705,7 +705,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 2.15
+        time: 1.4166666
         value: {x: 7.485497, y: 0, z: 13.92}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -716,8 +716,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 2.75
         value: {x: 8.768135, y: 0, z: 22.379934}
-        inSlope: {x: 2.8690572, y: 0, z: 8.506097}
-        outSlope: {x: 2.8690572, y: 0, z: 8.506097}
+        inSlope: {x: 1.7713307, y: 0, z: 5.2515893}
+        outSlope: {x: 1.7713307, y: 0, z: 5.2515893}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -852,7 +852,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 2.15
+        time: 1.4166666
         value: 7.485497
         inSlope: 0
         outSlope: 0
@@ -863,8 +863,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 2.75
         value: 8.768135
-        inSlope: 2.8690572
-        outSlope: 2.8690572
+        inSlope: 1.7713307
+        outSlope: 1.7713307
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -907,7 +907,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 2.15
+        time: 1.4166666
         value: 0
         inSlope: 0
         outSlope: 0
@@ -962,7 +962,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 2.15
+        time: 1.4166666
         value: 13.92
         inSlope: 0
         outSlope: 0
@@ -973,8 +973,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 2.75
         value: 22.379934
-        inSlope: 8.506097
-        outSlope: 8.506097
+        inSlope: 5.2515893
+        outSlope: 5.2515893
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -1063,7 +1063,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2.15
+        time: 1.4166666
         value: 0
         inSlope: 1.7953548
         outSlope: 1.7953548
@@ -1074,8 +1074,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 3.3333333
         value: 54.7019
-        inSlope: 61.515205
-        outSlope: 61.515205
+        inSlope: 40.533268
+        outSlope: 40.533268
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -2161,7 +2161,7 @@ MonoBehaviour:
   m_Version: 1
   m_OpenClipPreExtrapolation: 1
   m_OpenClipPostExtrapolation: 1
-  m_OpenClipOffsetPosition: {x: -0.56433105, y: -1.0069661, z: -0.15664291}
+  m_OpenClipOffsetPosition: {x: 95.2, y: -1.0069661, z: -0.15664291}
   m_OpenClipOffsetEulerAngles: {x: 0, y: 180.173, z: 0}
   m_OpenClipTimeOffset: 0
   m_MatchTargetFields: 63
@@ -2458,7 +2458,7 @@ MonoBehaviour:
   m_Version: 1
   m_OpenClipPreExtrapolation: 1
   m_OpenClipPostExtrapolation: 1
-  m_OpenClipOffsetPosition: {x: -0.56433105, y: -1.0069661, z: -0.15664291}
+  m_OpenClipOffsetPosition: {x: 93.83, y: -1.0069661, z: -0.15664291}
   m_OpenClipOffsetEulerAngles: {x: 0, y: 180.173, z: 0}
   m_OpenClipTimeOffset: 0
   m_MatchTargetFields: 63

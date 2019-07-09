@@ -10,6 +10,7 @@ public class enableAltima : MonoBehaviour {
     {
         //GameObject thePlayer = GameObject.Find("altima");
         altima.SetActive(false);
+
         //thePlayer.GetComponent<RCC_CarControllerV3>().OnEnable();
         //thePlayer.GetComponent<RCC_CarControllerV3>().KillOrStartEngine();
         //thePlayer.SetActive(false);
@@ -19,7 +20,12 @@ public class enableAltima : MonoBehaviour {
     void OnDisable()
     {
         //GameObject thePlayer = GameObject.Find("altima");
-        altima.SetActive(true);
+        if (altima.GetComponent<Renderer>() == null ) {
+
+            altima.SetActive(true);
+
+
+        }
 
     }
 }

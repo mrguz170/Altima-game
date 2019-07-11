@@ -22,7 +22,7 @@ public class enableAltima : MonoBehaviour {
         //GameObject thePlayer = GameObject.Find("altima");
         if (altima.GetComponent<Renderer>() == null ) {
 
-            altima.SetActive(true);
+            altima.gameObject.SetActive(true);
 
 
         }

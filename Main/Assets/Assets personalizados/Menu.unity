@@ -323,7 +323,7 @@ Prefab:
     - target: {fileID: 114903986690492312, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
       propertyPath: m_FontData.m_FontSize
-      value: 22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114903986690492312, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
@@ -333,7 +333,7 @@ Prefab:
     - target: {fileID: 114903986690492312, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
       propertyPath: m_Text
-      value: PREMIO
+      value: PRUEBA
       objectReference: {fileID: 0}
     - target: {fileID: 114903986690492312, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
@@ -385,7 +385,7 @@ Prefab:
     - target: {fileID: 224905059925262688, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 45
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 114335094841909430, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
@@ -454,12 +454,12 @@ Prefab:
     - target: {fileID: 224905059925262688, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 606
+      value: 485.8
       objectReference: {fileID: 0}
     - target: {fileID: 224905059925262688, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 164
+      value: 146
       objectReference: {fileID: 0}
     - target: {fileID: 114903986690492312, guid: 5b0fb7383904bd448a967c9060e10c88,
         type: 2}
@@ -513,6 +513,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1666302062612084, guid: 5b0fb7383904bd448a967c9060e10c88, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224905059925262688, guid: 5b0fb7383904bd448a967c9060e10c88,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

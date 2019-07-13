@@ -12,7 +12,7 @@ public class decisiones : MonoBehaviour {
 
     public void Start()
     {
-        decisions_canvas.gameObject.SetActive(false);
+        
         canvasA.gameObject.SetActive(false);
         canvasB.gameObject.SetActive(false);
     }

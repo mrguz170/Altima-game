@@ -21,6 +21,8 @@ MonoBehaviour:
   - {fileID: 114325545013888404}
   - {fileID: 114542964453403730}
   - {fileID: 114675875831164548}
+  - {fileID: 114404184388220750}
+  - {fileID: 114589461932537600}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
@@ -1331,6 +1333,26 @@ MonoBehaviour:
   m_ApplyAvatarMask: 1
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &114404184388220750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 46519060, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Activation Track (7)
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Version: 1
+  m_PostPlaybackState: 3
 --- !u!114 &114417510543694062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1452,7 +1474,7 @@ MonoBehaviour:
   - m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114417510543694062}
-    m_Duration: 15.35
+    m_Duration: 17.133333333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114542964453403730}
     m_EaseInDuration: 0
@@ -1520,6 +1542,26 @@ MonoBehaviour:
     m_Version: 1
   m_Version: 1
   m_PostPlaybackState: 3
+--- !u!114 &114589461932537600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 46519060, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Activation Track (6)
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Version: 1
+  m_PostPlaybackState: 3
 --- !u!114 &114596812748791702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1560,10 +1602,10 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 15.35
+  - m_Start: 14.433333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 114323301852149918}
-    m_Duration: 0.25
+    m_Duration: 1.4666666666666668
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114675875831164548}
     m_EaseInDuration: 0

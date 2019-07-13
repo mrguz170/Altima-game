@@ -7,12 +7,17 @@ using UnityEngine;
 public class beginInteraction : MonoBehaviour {
 
     public PlayableDirector timeline;
-    public GameObject desiciones;
+    
     public GameObject altima;
     public GameObject altima4Anim;
 
+    public GameObject panelInteraction;
+    public GameObject AoB;
     public GameObject panelA;
     public GameObject panelB;
+    public GameObject panelEstrellas;
+    public GameObject panelControles;
+
 
     public GameObject estrella;
     public Image fill_star;
@@ -23,20 +28,22 @@ public class beginInteraction : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        fill_star = GetComponent<Image>();
-       // fill2 = GetComponent<SpriteRenderer>();
+       
+        panelInteraction.gameObject.SetActive(false);
+        //AoB.gameObject.SetActive(false);
         timeline = GetComponent<PlayableDirector>();
     }
     //evento al entrar al triggerbox
     private void OnTriggerEnter(Collider c)
     {
         if (c.gameObject.tag == "Player" && state == false)
-        {
-            
-            estrella.gameObject.SetActive(false);
+        {         
+            estrella.gameObject.SetActive(false);   //deshabilitar estrella 
+            panelInteraction.gameObject.SetActive(true); //habilitar panel interaction
+            panelEstrellas.gameObject.SetActive(false);
+            panelControles.gameObject.SetActive(false);
             timeline.Play();
             state = true;
-            desiciones.gameObject.SetActive(true);
             disableAltima();
         }
     }
@@ -58,14 +65,53 @@ public class beginInteraction : MonoBehaviour {
     //
     public void hidePanels()
     {
-        panelA.gameObject.SetActive(false);
-        panelB.gameObject.SetActive(false);
+        panelInteraction.SetActive(false);
     }
 
+    
+    public void push_A()
+    {
+        AoB.gameObject.SetActive(false);
+        panelA.gameObject.SetActive(true);
+    }
 
+    public void push_B()
+    {
+        AoB.gameObject.SetActive(false);
+        panelB.gameObject.SetActive(true);
+    }
+
+    // AL GANAR: funcion llamada al presionar next/go/continue
     public void winStar()
     {
-        //fill_star.gameObject.GetComponent<SpriteRenderer>().sprite = sprite_fillStar;
+        panelEstrellas.gameObject.SetActive(true);
+        panelControles.gameObject.SetActive(true);
+        enableAltima();
+        addStar();
+    }
+
+    // AL PERDER: funcion llamada al presionar next/go/continue
+    public void loseStar()
+    {
+        panelEstrellas.gameObject.SetActive(true);
+        panelControles.gameObject.SetActive(true);
+        enableAltima();
+        
+    }
+    
+    // AL REINTENTAR: funcion llamada al presionar next/go/continue
+    public void retryStar()
+    {
+        panelEstrellas.gameObject.SetActive(true);
+        panelControles.gameObject.SetActive(true);
         enableAltima();
     }
+
+    //------------------------------------------------//
+
+    public void addStar()
+    {
+
+    }
+
 }
